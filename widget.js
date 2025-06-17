@@ -77,7 +77,7 @@
     font-family: 'Material Symbols Rounded', sans-serif;
   }
   
-  .widget-close-icon {
+  .widget-button .widget-close-icon {
     display: none;
   }
   

@@ -9,9 +9,9 @@ const inputInitHeight = chatInput.scrollHeight;
 
 // Danh sách các webhook URL cho từng website
 const websiteWebhooks = {
-    default: "https://n8n.thisistool.com/webhook/faa1a747-947c-4310-bdfc-bb4be152d9a4",
-    supover: "https://n8n.thisistool.com/webhook/faa1a747-947c-4310-bdfc-bb4be152d9a4",
-    pressify: "https://n8n.thisistool.com/webhook/b3dd7238-ccb5-45c1-86a3-9d38422a22b3",
+    default: "https://n8n.supover.com/webhook/faa1a747-947c-4310-bdfc-bb4be152d9a4",
+    supover: "https://n8n.supover.com/webhook/faa1a747-947c-4310-bdfc-bb4be152d9a4",
+    pressify: "https://n8n.supover.com/webhook/b3dd7238-ccb5-45c1-86a3-9d38422a22b3",
 };
 
 // Lấy website ID từ window hoặc sử dụng default
@@ -84,7 +84,7 @@ chatInput.addEventListener("input", () => {
 });
 
 chatInput.addEventListener("keydown", (e) => {
-    if (e.key === "Enter" && !e.shiftKey && window.innerWidth > 800) {
+    if (e.key === "Enter" && !e.shiftKey) {
         e.preventDefault();
         handleChat();
     }
